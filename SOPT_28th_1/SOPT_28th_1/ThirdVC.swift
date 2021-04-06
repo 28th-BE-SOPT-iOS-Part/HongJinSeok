@@ -27,10 +27,11 @@ class ThirdVC: BaseVC {
     }
     
     func UISetting(){
-        MainLabel.text = email
+    
+        MainLabel.text = "\(email ?? "")님"
         MainLabel2.text = "가입이 완료되었습니다"
         
-        settingButton(completeBtn, "확인")
+        completeBtn.custumBtn("확인")
         completeBtn.backgroundColor = UIColor.yellow
     }
 }

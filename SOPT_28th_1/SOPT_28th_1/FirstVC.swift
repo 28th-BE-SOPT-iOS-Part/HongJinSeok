@@ -40,11 +40,13 @@ class FirstVC: BaseVC {
         detailLabel.textColor = UIColor.gray
         detailLabel2.textColor = UIColor.gray
         
-        settingTextField(email_TextField, "이메일 또는 전화번호")
-        settingTextField(pwd_textField, "비밀번호")
+        email_TextField.underline("이메일 또는 전화번호")
+        pwd_textField.underline("비밀번호")
+        pwd_textField.isSecureTextEntry = true
         
-        settingButton(loginBtn, "카카오계정 로그인")
-        settingButton(NloginBtn, "새로운 카카오계정 만들기")
+        loginBtn.custumBtn("카카오계정 로그인")
+        NloginBtn.custumBtn("새로운 카카오계정 만들기")
+
         
     }
 

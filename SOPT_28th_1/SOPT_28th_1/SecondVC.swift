@@ -49,11 +49,13 @@ class SecondVC: BaseVC {
     func UISetting(){
         mainLabel.text = "카카오톡을 시작합니다"
         
-        settingButton(completeBtn, "새로운 카카오계정 만들기")
+        completeBtn.custumBtn("새로운 카카오계정 만들기")
         
-        settingTextField(email_TextField, "이메일 또는 전화번호")
-        settingTextField(pwd_TextField, "비밀번호")
-        settingTextField(repwd_TextField, "비밀번호 확인")
+        email_TextField.underline("이메일 또는 전화번호")
+        pwd_TextField.underline("이메일 또는 전화번호")
+        repwd_TextField.underline("비밀번호 확인")
         
+        pwd_TextField.isSecureTextEntry = true
+        repwd_TextField.isSecureTextEntry = true
     }
 }
