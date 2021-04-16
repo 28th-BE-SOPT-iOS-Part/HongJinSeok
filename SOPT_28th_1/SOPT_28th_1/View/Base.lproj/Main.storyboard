@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FirstVC-->
+        <!--Log InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirstVC" id="BYZ-38-t0r" customClass="FirstVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInVC" id="BYZ-38-t0r" customClass="LogInVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-9A-PTd">
                                 <rect key="frame" x="20" y="404" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BC-bg-68z">
                                 <rect key="frame" x="184" y="498" width="46" height="30"/>
@@ -64,8 +64,8 @@
                         <constraints>
                             <constraint firstItem="wUC-hU-9fQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ax-Ac-OpF"/>
                             <constraint firstItem="hjY-mx-sUs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4q5-2Z-uNq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gt9-7c-V4a" secondAttribute="trailing" constant="20" id="5Xz-J8-Ufv"/>
                             <constraint firstItem="JVO-Yx-kgo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7x3-IA-LwG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gt9-7c-V4a" secondAttribute="trailing" constant="20" id="9oA-Hd-hZB"/>
                             <constraint firstItem="gt9-7c-V4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Dp7-Os-UhO"/>
                             <constraint firstItem="43S-ac-RtB" firstAttribute="top" secondItem="JVO-Yx-kgo" secondAttribute="bottom" constant="10" id="FTL-le-f2Q"/>
                             <constraint firstItem="qVx-9A-PTd" firstAttribute="trailing" secondItem="gt9-7c-V4a" secondAttribute="trailing" id="MUz-Sh-hEx"/>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="77.678571428571431"/>
         </scene>
-        <!--SecondVC-->
+        <!--Sign UpVC-->
         <scene sceneID="vmI-Qi-msC">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="1qG-Zf-KXL" customClass="SecondVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="1qG-Zf-KXL" customClass="SignUpVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TGb-iE-kai">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,12 +117,12 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0fL-X8-bnj">
                                 <rect key="frame" x="20" y="404" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3sB-kE-Ufd">
                                 <rect key="frame" x="20" y="478" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWv-0B-fgi">
                                 <rect key="frame" x="131.5" y="562" width="151" height="30"/>
@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8b-c6-ajr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="887"/>
+            <point key="canvasLocation" x="962" y="986"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kTx-Zg-aPZ">

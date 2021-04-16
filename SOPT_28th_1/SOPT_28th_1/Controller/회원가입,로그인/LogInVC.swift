@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstVC: BaseVC {
+class LogInVC: BaseVC {
 
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
@@ -32,6 +32,10 @@ class FirstVC: BaseVC {
         pwd_textField.delegate = self
     }
     
+    override func viewDidLayoutSubviews(){
+        LayoutSetting()
+    }
+    
     func UISetting(){
         mainLabel.text = "카카오톡을 시작합니다"
        
@@ -40,24 +44,27 @@ class FirstVC: BaseVC {
         detailLabel.textColor = UIColor.gray
         detailLabel2.textColor = UIColor.gray
         
-        email_TextField.underline("이메일 또는 전화번호")
-        pwd_textField.underline("비밀번호")
-        pwd_textField.isSecureTextEntry = true
-        
         loginBtn.custumBtn("카카오계정 로그인")
         NloginBtn.custumBtn("새로운 카카오계정 만들기")
+        email_TextField.placeholder = ""
 
         
+    }
+    func LayoutSetting(){
+        if email_TextField.placeholder == nil{
+            email_TextField.underline("이메일 또는 전화번호")
+        }
+        if pwd_textField.placeholder == nil{
+            pwd_textField.underline("비밀번호")
+        }
     }
 
      @IBAction func loginBtnClicked(_ sender: Any) {
         if buttonCheck(textfields!){
 
-            guard let nextVC = storyboard?.instantiateViewController(identifier: "ThirdVC") as? ThirdVC else{return}
-            
-            if let email = email_TextField.text{
-                nextVC.email = email
-            }
+            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
+            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
+
             
             nextVC.modalPresentationStyle = .overFullScreen
             self.present(nextVC, animated: true, completion: nil)
@@ -65,7 +72,7 @@ class FirstVC: BaseVC {
      }
     
     @IBAction func newBtnClicked(_ sender: Any) {
-        guard let nextVC = storyboard?.instantiateViewController(identifier: "SecondVC") as? SecondVC else{return}
+        guard let nextVC = storyboard?.instantiateViewController(identifier: "SignUpVC") as? SignUpVC else{return}
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     

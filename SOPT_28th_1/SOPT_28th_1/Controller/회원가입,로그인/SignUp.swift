@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondVC: BaseVC {
+class SignUpVC: BaseVC {
 
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var completeBtn: UIButton!
@@ -29,33 +29,41 @@ class SecondVC: BaseVC {
         pwd_TextField.delegate = self
         repwd_TextField.delegate = self
     }
-
+    
+    override func viewDidLayoutSubviews(){
+        LayoutSetting()
+    }
+    
+    func UISetting(){
+        mainLabel.text = "카카오톡을 시작합니다"
+        completeBtn.custumBtn("새로운 카카오계정 만들기")
+    }
+    
+    func LayoutSetting(){
+        if email_TextField.placeholder == nil{
+            email_TextField.underline("이메일 또는 전화번호")
+        }
+        
+        if pwd_TextField.placeholder == nil{
+            pwd_TextField.underline("비밀번호")
+        }
+        
+        if repwd_TextField.placeholder == nil{
+            repwd_TextField.underline("비밀번호 확인")
+        }
+    }
+    
     @IBAction func completBtnClicked(_ sender: Any) {
         if buttonCheck(textfields!){
-            guard let nextVC = storyboard?.instantiateViewController(identifier: "ThirdVC") as? ThirdVC else{return}
+            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
+            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
             
-            if let email = email_TextField.text{
-                nextVC.email = email
-            }
+    
             nextVC.modalPresentationStyle = .fullScreen
             
             self.present(nextVC, animated: true, completion: nil)
             
             back()
-            
         }
-    }
-    
-    func UISetting(){
-        mainLabel.text = "카카오톡을 시작합니다"
-        
-        completeBtn.custumBtn("새로운 카카오계정 만들기")
-        
-        email_TextField.underline("이메일 또는 전화번호")
-        pwd_TextField.underline("이메일 또는 전화번호")
-        repwd_TextField.underline("비밀번호 확인")
-        
-        pwd_TextField.isSecureTextEntry = true
-        repwd_TextField.isSecureTextEntry = true
     }
 }
