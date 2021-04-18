@@ -17,12 +17,12 @@ class TabbarSegue1VC: UIViewController {
 
         mainLabel.font = UIFont.main
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchInside(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchImage(_:)))
         profileImg.addGestureRecognizer(tapGesture)
         profileImg.isUserInteractionEnabled = true
     }
     
-    @objc func touchInside(_ gesture: UITapGestureRecognizer) {
+    @objc func touchImage(_ gesture: UITapGestureRecognizer) {
         guard let nextVC = storyboard?.instantiateViewController(identifier: "ProfileVC") as? ProfileVC else{return}
         
         nextVC.modalPresentationStyle = .overFullScreen

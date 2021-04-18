@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6DA262C4EDC005B2913 /* ChatVC.swift */; };
+		4F17D6DF262C4EE7005B2913 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6DE262C4EE7005B2913 /* EditVC.swift */; };
+		4F17D6E2262C4EF2005B2913 /* StoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6E1262C4EF2005B2913 /* StoryVC.swift */; };
 		4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E0326274C570020ED9E /* Tabbar.storyboard */; };
 		4F539E2226283ECC0020ED9E /* TabbarSegue1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */; };
 		4F539E2526283EEF0020ED9E /* TabbarSegue2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E2426283EEF0020ED9E /* TabbarSegue2.storyboard */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F17D6DA262C4EDC005B2913 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		4F17D6DE262C4EE7005B2913 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		4F17D6E1262C4EF2005B2913 /* StoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVC.swift; sourceTree = "<group>"; };
 		4F539E0326274C570020ED9E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSegue1.storyboard; sourceTree = "<group>"; };
 		4F539E2426283EEF0020ED9E /* TabbarSegue2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSegue2.storyboard; sourceTree = "<group>"; };
@@ -69,6 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F06AC07262C34AF00324C92 /* 친구 */ = {
+			isa = PBXGroup;
+			children = (
+				4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */,
+				4F539E4526284CBC0020ED9E /* ProfileVC.swift */,
+				4F17D6DA262C4EDC005B2913 /* ChatVC.swift */,
+				4F17D6DE262C4EE7005B2913 /* EditVC.swift */,
+				4F17D6E1262C4EF2005B2913 /* StoryVC.swift */,
+			);
+			name = "친구";
+			path = "친구";
+			sourceTree = "<group>";
+		};
 		4F539E0126274B640020ED9E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,10 +106,9 @@
 		4F539E0726274D4A0020ED9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4F539E2026283E9F0020ED9E /* 회원가입,로그인 */,
 				4F539E30262843560020ED9E /* TabbarVC.swift */,
-				4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */,
-				4F539E4526284CBC0020ED9E /* ProfileVC.swift */,
+				4F539E2026283E9F0020ED9E /* 회원가입,로그인 */,
+				4F06AC07262C34AF00324C92 /* 친구 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,13 +244,16 @@
 			files = (
 				4F539E4626284CBC0020ED9E /* ProfileVC.swift in Sources */,
 				4F9B4BA526188F51007E8534 /* ThirdVC.swift in Sources */,
+				4F17D6E2262C4EF2005B2913 /* StoryVC.swift in Sources */,
 				4F9B4BA92618928B007E8534 /* BaseVC.swift in Sources */,
 				4F539E31262843560020ED9E /* TabbarVC.swift in Sources */,
 				4F539E392628471C0020ED9E /* UITextField.swift in Sources */,
 				4F9B4BA226188F46007E8534 /* SignUp.swift in Sources */,
 				4F9B4B9F26188F3B007E8534 /* LogInVC.swift in Sources */,
 				4F539E43262848C00020ED9E /* UIFont.swift in Sources */,
+				4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */,
 				4F539E402628484D0020ED9E /* TabbarSegue1VC.swift in Sources */,
+				4F17D6DF262C4EE7005B2913 /* EditVC.swift in Sources */,
 				4F539E4926284E730020ED9E /* UIColor.swift in Sources */,
 				4F9B4B8A26188E70007E8534 /* AppDelegate.swift in Sources */,
 				4F9B4B8C26188E70007E8534 /* SceneDelegate.swift in Sources */,

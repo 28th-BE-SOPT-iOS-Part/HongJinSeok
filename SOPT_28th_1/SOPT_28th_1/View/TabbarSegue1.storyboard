@@ -67,8 +67,8 @@
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="mzc-dJ-7LB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mainLabel" destination="fzw-KB-sCm" id="xZK-ie-54a"/>
-                        <outlet property="profileImg" destination="Gkt-Nf-tiu" id="Afz-MO-sCn"/>
+                        <outlet property="mainLabel" destination="fzw-KB-sCm" id="our-Cn-CCP"/>
+                        <outlet property="profileImg" destination="Gkt-Nf-tiu" id="VOt-0e-qaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5T-jh-gG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -191,15 +191,99 @@
                     </view>
                     <connections>
                         <outlet property="chatLabel" destination="Ujr-CZ-2YQ" id="QFo-Ft-vBm"/>
+                        <outlet property="chatView" destination="Ofw-Zf-9nT" id="g9E-w5-ejQ"/>
                         <outlet property="editLabel" destination="1Y2-E6-p3m" id="chI-8c-OoD"/>
+                        <outlet property="editView" destination="DjB-g0-3nX" id="V7S-81-fi7"/>
                         <outlet property="menuStackView" destination="GMf-RF-Nzu" id="uM5-r1-RFj"/>
                         <outlet property="nameLabel" destination="PUM-gk-fCl" id="LEe-TT-OW7"/>
                         <outlet property="storyLabel" destination="Hlf-SA-SU0" id="Eye-h0-kJU"/>
+                        <outlet property="storyView" destination="DUK-Gl-Rjv" id="dIw-DU-5DQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6t-y3-4L2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076.8115942028987" y="81.696428571428569"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="Hgf-zk-xfj">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" id="0cI-EV-GSD" customClass="ChatVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yK8-Tv-UCj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mi-OJ-xWT">
+                                <rect key="frame" x="190.5" y="437.5" width="33.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RO6-WA-QaF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9mi-OJ-xWT" firstAttribute="centerX" secondItem="yK8-Tv-UCj" secondAttribute="centerX" id="6SE-LO-VRd"/>
+                            <constraint firstItem="9mi-OJ-xWT" firstAttribute="centerY" secondItem="yK8-Tv-UCj" secondAttribute="centerY" id="esz-Kx-h3A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTM-J4-hO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2085" y="-77"/>
+        </scene>
+        <!--EditVC-->
+        <scene sceneID="1ll-L2-Wdd">
+            <objects>
+                <viewController storyboardIdentifier="EditVC" id="Ehf-u8-Vg3" customClass="EditVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVF-so-rzp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av9-du-lRk">
+                                <rect key="frame" x="192.5" y="437.5" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oE1-oD-rhA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Av9-du-lRk" firstAttribute="centerY" secondItem="eVF-so-rzp" secondAttribute="centerY" id="Ocl-Y5-odN"/>
+                            <constraint firstItem="Av9-du-lRk" firstAttribute="centerX" secondItem="eVF-so-rzp" secondAttribute="centerX" id="kaC-jt-xw1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gII-sl-CIy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2923" y="-77"/>
+        </scene>
+        <!--StoryVC-->
+        <scene sceneID="136-C1-9CN">
+            <objects>
+                <viewController storyboardIdentifier="StoryVC" id="Jcl-dt-CdM" customClass="StoryVC" customModule="SOPT_28th_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ye1-zV-23S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-Eb-B3M">
+                                <rect key="frame" x="188" y="437.5" width="38.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fqo-Ie-rdB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0lV-Eb-B3M" firstAttribute="centerY" secondItem="Ye1-zV-23S" secondAttribute="centerY" id="q2I-E3-fGr"/>
+                            <constraint firstItem="0lV-Eb-B3M" firstAttribute="centerX" secondItem="Ye1-zV-23S" secondAttribute="centerX" id="vhb-Yo-nqS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5Z-Ow-nhA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3791" y="-77"/>
         </scene>
     </scenes>
     <resources>
