@@ -21,33 +21,32 @@ class ProfileVC: UIViewController {
     
     var lineCheck : Bool = false
     
+    // MARK: - ViewCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UISetting()
-                    
     }
     
     override func viewDidLayoutSubviews(){
         LayoutSetting()
     }
     
+    // MARK: - Setting
     func UISetting(){
         
+        self.swipDownDismiss()
+        
         view.backgroundColor = UIColor.blueGrey
+        
         chatLabel.font = UIFont.profileMenu
         editLabel.font = UIFont.profileMenu
         storyLabel.font = UIFont.profileMenu
         nameLabel.font = UIFont.profileName
-    
-        let dismissGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeDown(_:)))
-        dismissGesture.direction = .down
-        view.addGestureRecognizer(dismissGesture)
-        view.isUserInteractionEnabled = true
-        
-        chatView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(touchChat(_:))))
-        editView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(touchEdit(_:))))
-        storyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(touchStory(_:))))
+
+        chatView.addTapNextVC("ChatVC")
+        editView.addTapNextVC("EditVC")
+        storyView.addTapNextVC("StoryVC")
     }
     
     func LayoutSetting(){
@@ -67,28 +66,8 @@ class ProfileVC: UIViewController {
         }
     }
     
+    // MARK: - IBAction
     @IBAction func backBtnClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-    }
-    
-    @objc func swipeDown(_ gesture: UITapGestureRecognizer) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @objc func touchChat(_ gesture: UITapGestureRecognizer) {
-        goNextView("ChatVC")
-    }
-    @objc func touchEdit(_ gesture: UITapGestureRecognizer) {
-        goNextView("EditVC")
-    }
-    @objc func touchStory(_ gesture: UITapGestureRecognizer) {
-        goNextView("StoryVC")
-    }
-    
-    func goNextView(_ next : String){
-        guard let nextVC = storyboard?.instantiateViewController(identifier: "\(next)") else{return}
-        
-        nextVC.modalPresentationStyle = .automatic
-        self.present(nextVC, animated: true, completion: nil)
     }
 }

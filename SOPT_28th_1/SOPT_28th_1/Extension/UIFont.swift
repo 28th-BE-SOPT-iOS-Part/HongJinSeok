@@ -12,6 +12,7 @@ extension UIFont {
     class var main: UIFont {
         return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 22.0)!
     }
+   
     class var profileName: UIFont {
        return UIFont(name: "AppleSDGothicNeo-Regular", size: 18.0)!
      }

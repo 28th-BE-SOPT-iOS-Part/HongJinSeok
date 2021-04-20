@@ -18,6 +18,7 @@ class SignUpVC: BaseVC {
     
     var textfields : [UITextField]?
     
+    // MARK: - ViewCycle
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -34,6 +35,7 @@ class SignUpVC: BaseVC {
         LayoutSetting()
     }
     
+    // MARK: - Setting
     func UISetting(){
         mainLabel.text = "카카오톡을 시작합니다"
         completeBtn.custumBtn("새로운 카카오계정 만들기")
@@ -53,6 +55,7 @@ class SignUpVC: BaseVC {
         }
     }
     
+    // MARK: - IBAction
     @IBAction func completBtnClicked(_ sender: Any) {
         if buttonCheck(textfields!){
             let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)

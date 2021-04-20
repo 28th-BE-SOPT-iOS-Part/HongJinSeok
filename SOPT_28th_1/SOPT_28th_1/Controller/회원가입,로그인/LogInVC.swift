@@ -21,6 +21,7 @@ class LogInVC: BaseVC {
     
     var textfields : [UITextField]?
     
+    // MARK: - ViewCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +37,7 @@ class LogInVC: BaseVC {
         LayoutSetting()
     }
     
+    // MARK: - Setting
     func UISetting(){
         mainLabel.text = "카카오톡을 시작합니다"
        
@@ -50,6 +52,7 @@ class LogInVC: BaseVC {
 
         
     }
+    
     func LayoutSetting(){
         if email_TextField.placeholder == nil{
             email_TextField.underline("이메일 또는 전화번호")
@@ -59,6 +62,7 @@ class LogInVC: BaseVC {
         }
     }
 
+    // MARK: - IBAction
      @IBAction func loginBtnClicked(_ sender: Any) {
         if buttonCheck(textfields!){
 

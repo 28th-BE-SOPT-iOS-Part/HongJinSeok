@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F084074262EF00500247BAE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084073262EF00500247BAE /* UIView.swift */; };
+		4F084077262EF37500247BAE /* TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084076262EF37500247BAE /* TapGesture.swift */; };
 		4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6DA262C4EDC005B2913 /* ChatVC.swift */; };
 		4F17D6DF262C4EE7005B2913 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6DE262C4EE7005B2913 /* EditVC.swift */; };
 		4F17D6E2262C4EF2005B2913 /* StoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6E1262C4EF2005B2913 /* StoryVC.swift */; };
+		4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6EA262DB1B8005B2913 /* UIViewController.swift */; };
 		4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E0326274C570020ED9E /* Tabbar.storyboard */; };
 		4F539E2226283ECC0020ED9E /* TabbarSegue1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */; };
 		4F539E2526283EEF0020ED9E /* TabbarSegue2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E2426283EEF0020ED9E /* TabbarSegue2.storyboard */; };
@@ -35,9 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F084073262EF00500247BAE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		4F084076262EF37500247BAE /* TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGesture.swift; sourceTree = "<group>"; };
 		4F17D6DA262C4EDC005B2913 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4F17D6DE262C4EE7005B2913 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		4F17D6E1262C4EF2005B2913 /* StoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVC.swift; sourceTree = "<group>"; };
+		4F17D6EA262DB1B8005B2913 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4F539E0326274C570020ED9E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSegue1.storyboard; sourceTree = "<group>"; };
 		4F539E2426283EEF0020ED9E /* TabbarSegue2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSegue2.storyboard; sourceTree = "<group>"; };
@@ -79,13 +85,30 @@
 			isa = PBXGroup;
 			children = (
 				4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */,
-				4F539E4526284CBC0020ED9E /* ProfileVC.swift */,
-				4F17D6DA262C4EDC005B2913 /* ChatVC.swift */,
-				4F17D6DE262C4EE7005B2913 /* EditVC.swift */,
-				4F17D6E1262C4EF2005B2913 /* StoryVC.swift */,
+				4F08406B262EE8AF00247BAE /* 상세프로필 */,
 			);
 			name = "친구";
 			path = "친구";
+			sourceTree = "<group>";
+		};
+		4F08406B262EE8AF00247BAE /* 상세프로필 */ = {
+			isa = PBXGroup;
+			children = (
+				4F539E4526284CBC0020ED9E /* ProfileVC.swift */,
+				4F17D6E1262C4EF2005B2913 /* StoryVC.swift */,
+				4F17D6DE262C4EE7005B2913 /* EditVC.swift */,
+				4F17D6DA262C4EDC005B2913 /* ChatVC.swift */,
+			);
+			name = "상세프로필";
+			path = "상세프로필";
+			sourceTree = "<group>";
+		};
+		4F08406D262EEAF800247BAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F084076262EF37500247BAE /* TapGesture.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4F539E0126274B640020ED9E /* View */ = {
@@ -132,6 +155,8 @@
 				4F539E3C262847280020ED9E /* UIButton.swift */,
 				4F539E42262848C00020ED9E /* UIFont.swift */,
 				4F539E4826284E730020ED9E /* UIColor.swift */,
+				4F17D6EA262DB1B8005B2913 /* UIViewController.swift */,
+				4F084073262EF00500247BAE /* UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 		4F9B4B8826188E70007E8534 /* SOPT_28th_1 */ = {
 			isa = PBXGroup;
 			children = (
+				4F08406D262EEAF800247BAE /* Model */,
 				4F539E37262847030020ED9E /* Extension */,
 				4F539E0726274D4A0020ED9E /* Controller */,
 				4F539E0126274B640020ED9E /* View */,
@@ -250,6 +276,8 @@
 				4F539E392628471C0020ED9E /* UITextField.swift in Sources */,
 				4F9B4BA226188F46007E8534 /* SignUp.swift in Sources */,
 				4F9B4B9F26188F3B007E8534 /* LogInVC.swift in Sources */,
+				4F084077262EF37500247BAE /* TapGesture.swift in Sources */,
+				4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */,
 				4F539E43262848C00020ED9E /* UIFont.swift in Sources */,
 				4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */,
 				4F539E402628484D0020ED9E /* TabbarSegue1VC.swift in Sources */,
@@ -257,6 +285,7 @@
 				4F539E4926284E730020ED9E /* UIColor.swift in Sources */,
 				4F9B4B8A26188E70007E8534 /* AppDelegate.swift in Sources */,
 				4F9B4B8C26188E70007E8534 /* SceneDelegate.swift in Sources */,
+				4F084074262EF00500247BAE /* UIView.swift in Sources */,
 				4F539E3D262847280020ED9E /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
