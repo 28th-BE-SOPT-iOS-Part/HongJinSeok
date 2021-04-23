@@ -81,17 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F06AC07262C34AF00324C92 /* 친구 */ = {
+		4F06AC07262C34AF00324C92 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
 				4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */,
-				4F08406B262EE8AF00247BAE /* 상세프로필 */,
+				4F08406B262EE8AF00247BAE /* Profile */,
 			);
-			name = "친구";
+			name = Friend;
 			path = "친구";
 			sourceTree = "<group>";
 		};
-		4F08406B262EE8AF00247BAE /* 상세프로필 */ = {
+		4F08406B262EE8AF00247BAE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				4F539E4526284CBC0020ED9E /* ProfileVC.swift */,
@@ -99,7 +99,7 @@
 				4F17D6DE262C4EE7005B2913 /* EditVC.swift */,
 				4F17D6DA262C4EDC005B2913 /* ChatVC.swift */,
 			);
-			name = "상세프로필";
+			name = Profile;
 			path = "상세프로필";
 			sourceTree = "<group>";
 		};
@@ -109,6 +109,15 @@
 				4F084076262EF37500247BAE /* TapGesture.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4F08407A262EF9FC00247BAE /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4F539E30262843560020ED9E /* TabbarVC.swift */,
+				4F06AC07262C34AF00324C92 /* Friend */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		4F539E0126274B640020ED9E /* View */ = {
@@ -129,14 +138,13 @@
 		4F539E0726274D4A0020ED9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4F539E30262843560020ED9E /* TabbarVC.swift */,
-				4F539E2026283E9F0020ED9E /* 회원가입,로그인 */,
-				4F06AC07262C34AF00324C92 /* 친구 */,
+				4F08407A262EF9FC00247BAE /* Tabbar */,
+				4F539E2026283E9F0020ED9E /* Sign */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		4F539E2026283E9F0020ED9E /* 회원가입,로그인 */ = {
+		4F539E2026283E9F0020ED9E /* Sign */ = {
 			isa = PBXGroup;
 			children = (
 				4F9B4BA82618928B007E8534 /* BaseVC.swift */,
@@ -144,7 +152,7 @@
 				4F9B4BA126188F46007E8534 /* SignUp.swift */,
 				4F9B4BA426188F51007E8534 /* ThirdVC.swift */,
 			);
-			name = "회원가입,로그인";
+			name = Sign;
 			path = "회원가입,로그인";
 			sourceTree = "<group>";
 		};
