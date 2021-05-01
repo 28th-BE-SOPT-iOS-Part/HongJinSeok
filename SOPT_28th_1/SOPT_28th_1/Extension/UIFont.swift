@@ -13,6 +13,14 @@ extension UIFont {
         return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 22.0)!
     }
    
+    class var FriendName: UIFont {
+       return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 12.0)!
+     }
+        
+    class var FriendState: UIFont {
+        return UIFont(name: "AppleSDGothicNeo-Regular", size: 11.0)!
+      }
+            
     class var profileName: UIFont {
        return UIFont(name: "AppleSDGothicNeo-Regular", size: 18.0)!
      }
@@ -20,4 +28,9 @@ extension UIFont {
     class var profileMenu: UIFont {
         return UIFont(name: "AppleSDGothicNeo-Regular", size: 10.0)!
     }
+    
+    class var MyName : UIFont {
+        return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 16.0)!
+      }
 }
+
