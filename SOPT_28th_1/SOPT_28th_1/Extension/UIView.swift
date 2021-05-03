@@ -25,6 +25,7 @@ extension UIView{
         tapGesture.nextIdentifier = next
         self.addGestureRecognizer(tapGesture)
         self.isUserInteractionEnabled = true
+    
     }
     
     @objc func touchInside(_ gesture : TapGesture){

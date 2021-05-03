@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+protocol CellDelegate{
+    func sendData(name: String, image : UIImage)
+    func showPreView(hidden : Bool)
+}

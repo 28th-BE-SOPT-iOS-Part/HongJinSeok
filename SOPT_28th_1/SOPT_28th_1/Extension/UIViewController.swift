@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension UIViewController{
+    
     func swipDownDismiss(){
         let dismissGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeDown(_:)))
         dismissGesture.direction = .down

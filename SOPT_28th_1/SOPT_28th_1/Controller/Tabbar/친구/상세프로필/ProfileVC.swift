@@ -7,27 +7,32 @@
 
 import UIKit
 
-class ProfileVC: UIViewController {
-
+class ProfileVC: UIViewController, CellDelegate {
+    
     @IBOutlet weak var menuStackView: UIStackView!
     @IBOutlet weak var chatLabel: UILabel!
     @IBOutlet weak var editLabel: UILabel!
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var closeBtn: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
     
     @IBOutlet weak var chatView: UIView!
     @IBOutlet weak var editView: UIView!
     @IBOutlet weak var storyView: UIView!
     
+    var celldelegate : CellDelegate?
+    var getName : String?
+    var getImage : UIImage?
     var lineCheck : Bool = false
+    var getHidden : Bool?
     
     // MARK: - ViewCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         UISetting()
     }
-    
+        
     override func viewDidLayoutSubviews(){
         LayoutSetting()
     }
@@ -43,6 +48,12 @@ class ProfileVC: UIViewController {
         editLabel.font = UIFont.profileMenu
         storyLabel.font = UIFont.profileMenu
         nameLabel.font = UIFont.profileName
+        
+        if let name = getName, let image = getImage{
+            nameLabel.text = name
+            profileImage.image = image
+        }
+        
 
         chatView.addTapNextVC("ChatVC")
         editView.addTapNextVC("EditVC")
@@ -70,4 +81,23 @@ class ProfileVC: UIViewController {
     @IBAction func backBtnClicked(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    // MARK: - CellDelgate
+    func sendData(name: String, image: UIImage) {
+        getName = name
+        getImage = image
+    }
+    
+    func showPreView(hidden: Bool) {
+        
+        if hidden{
+            DispatchQueue.main.async {
+                self.chatLabel.isHidden = true
+                self.editLabel.isHidden = true
+                self.storyLabel.isHidden = true
+                self.closeBtn.isHidden = true
+            }
+        }
+    }
 }
+    

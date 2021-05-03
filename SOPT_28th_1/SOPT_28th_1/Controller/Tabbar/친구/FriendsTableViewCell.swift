@@ -20,6 +20,7 @@ class FriendsTableViewCell: UITableViewCell {
         
         nameLabel.font = UIFont.FriendName
         stateLabel.font = UIFont.FriendState
+        stateLabel.textColor = UIColor.stateColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -9,6 +9,7 @@ import UIKit
 
 class SignUpVC: BaseVC {
 
+    //업데이트
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var completeBtn: UIButton!
     

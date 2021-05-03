@@ -48,6 +48,49 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9b1-ck-wBr">
                                 <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="2iN-nn-5av">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtab_profileImg" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-Kw-drz">
+                                            <rect key="frame" x="14" y="5" width="59" height="58"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="58" id="cmt-C3-cQJ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김솝트" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxR-bP-mwI">
+                                            <rect key="frame" x="83" y="15" width="29" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상태메세지는 여기에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5J-Ei-Zp8">
+                                            <rect key="frame" x="84" y="38" width="89" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijF-9h-Gv5">
+                                            <rect key="frame" x="16" y="71.5" width="382" height="1"/>
+                                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Hgv-at-Cpr"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="OxR-bP-mwI" firstAttribute="top" secondItem="2iN-nn-5av" secondAttribute="top" constant="15" id="8Zw-Tz-GFj"/>
+                                        <constraint firstItem="ijF-9h-Gv5" firstAttribute="leading" secondItem="2iN-nn-5av" secondAttribute="leading" constant="16" id="GCq-5d-xko"/>
+                                        <constraint firstItem="SBb-Kw-drz" firstAttribute="leading" secondItem="2iN-nn-5av" secondAttribute="leading" constant="14" id="GJX-Gx-OgR"/>
+                                        <constraint firstItem="SBb-Kw-drz" firstAttribute="top" secondItem="2iN-nn-5av" secondAttribute="top" constant="5" id="IhN-bi-GIP"/>
+                                        <constraint firstItem="p5J-Ei-Zp8" firstAttribute="leading" secondItem="SBb-Kw-drz" secondAttribute="trailing" constant="11" id="Lc5-If-XFS"/>
+                                        <constraint firstItem="p5J-Ei-Zp8" firstAttribute="top" secondItem="OxR-bP-mwI" secondAttribute="bottom" constant="9" id="USy-Ci-ss8"/>
+                                        <constraint firstItem="ijF-9h-Gv5" firstAttribute="top" secondItem="SBb-Kw-drz" secondAttribute="bottom" constant="8.5" id="n1P-35-tmY"/>
+                                        <constraint firstItem="OxR-bP-mwI" firstAttribute="leading" secondItem="SBb-Kw-drz" secondAttribute="trailing" constant="10" id="qoK-ko-omj"/>
+                                        <constraint firstAttribute="trailing" secondItem="ijF-9h-Gv5" secondAttribute="trailing" constant="16" id="qsu-jh-CcI"/>
+                                    </constraints>
+                                </view>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DA7-7m-i50"/>
@@ -66,12 +109,16 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mainLabel" destination="fzw-KB-sCm" id="our-Cn-CCP"/>
+                        <outlet property="myNameLabel" destination="OxR-bP-mwI" id="dQZ-TF-8rg"/>
+                        <outlet property="myProfileImage" destination="SBb-Kw-drz" id="cc7-tw-FT4"/>
+                        <outlet property="myStateLabel" destination="p5J-Ei-Zp8" id="rLu-gK-bfT"/>
                         <outlet property="profileTableView" destination="9b1-ck-wBr" id="dFo-YE-02Y"/>
+                        <outlet property="tableHeaderView" destination="2iN-nn-5av" id="TSs-kM-4Qr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5T-jh-gG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156.52173913043478" y="81.696428571428569"/>
+            <point key="canvasLocation" x="155.07246376811597" y="81.696428571428569"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="JpJ-KC-pcW">
@@ -89,11 +136,15 @@
                                     <action selector="backBtnClicked:" destination="Ekd-s4-YSG" eventType="touchUpInside" id="rVb-eE-fQX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_userImg" translatesAutoresizingMaskIntoConstraints="NO" id="VZC-fD-SLJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VZC-fD-SLJ">
                                 <rect key="frame" x="158.5" y="564.5" width="97" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Fgx-Ch-cF1"/>
+                                    <constraint firstAttribute="height" constant="96" id="G8W-A0-YYO"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김솝트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUM-gk-fCl">
-                                <rect key="frame" x="185" y="668.5" width="44.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUM-gk-fCl">
+                                <rect key="frame" x="202.5" y="668.5" width="9.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -190,10 +241,12 @@
                     <connections>
                         <outlet property="chatLabel" destination="Ujr-CZ-2YQ" id="QFo-Ft-vBm"/>
                         <outlet property="chatView" destination="Ofw-Zf-9nT" id="g9E-w5-ejQ"/>
+                        <outlet property="closeBtn" destination="ut0-N6-ToE" id="NmM-LT-pN1"/>
                         <outlet property="editLabel" destination="1Y2-E6-p3m" id="chI-8c-OoD"/>
                         <outlet property="editView" destination="DjB-g0-3nX" id="V7S-81-fi7"/>
                         <outlet property="menuStackView" destination="GMf-RF-Nzu" id="uM5-r1-RFj"/>
                         <outlet property="nameLabel" destination="PUM-gk-fCl" id="LEe-TT-OW7"/>
+                        <outlet property="profileImage" destination="VZC-fD-SLJ" id="snp-Kk-GzT"/>
                         <outlet property="storyLabel" destination="Hlf-SA-SU0" id="Eye-h0-kJU"/>
                         <outlet property="storyView" destination="DUK-Gl-Rjv" id="dIw-DU-5DQ"/>
                     </connections>
@@ -285,13 +338,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="friendtab_profileImg" width="59" height="58"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="profileStoryImg" width="20.5" height="23.5"/>
         <image name="profileTalkImg" width="20.5" height="19.5"/>
         <image name="profile_editImg" width="19.5" height="21.5"/>
-        <image name="profile_userImg" width="97" height="96"/>
+        <image name="settingIcon" width="19" height="19"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -31,15 +31,14 @@
 		4F9B4B9126188E70007E8534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B4B8F26188E70007E8534 /* Main.storyboard */; };
 		4F9B4B9326188E74007E8534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B4B9226188E74007E8534 /* Assets.xcassets */; };
 		4F9B4B9626188E74007E8534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B4B9426188E74007E8534 /* LaunchScreen.storyboard */; };
-		4F9B4B9F26188F3B007E8534 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4B9E26188F3B007E8534 /* LogInVC.swift */; };
-		4F9B4BA226188F46007E8534 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4BA126188F46007E8534 /* SignUp.swift */; };
-		4F9B4BA526188F51007E8534 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4BA426188F51007E8534 /* ThirdVC.swift */; };
-		4F9B4BA92618928B007E8534 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4BA82618928B007E8534 /* BaseVC.swift */; };
 		4FF244C0263BF6B200BF4BC5 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF244BF263BF6B200BF4BC5 /* FriendDataModel.swift */; };
 		4FF244C4263BFA7300BF4BC5 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF244C2263BFA7300BF4BC5 /* FriendsTableViewCell.swift */; };
 		4FF244C5263BFA7300BF4BC5 /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF244C3263BFA7300BF4BC5 /* FriendsTableViewCell.xib */; };
-		4FF244DD263C0E7D00BF4BC5 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF244DB263C0E7D00BF4BC5 /* MyTableViewCell.swift */; };
-		4FF244DE263C0E7D00BF4BC5 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF244DC263C0E7D00BF4BC5 /* MyTableViewCell.xib */; };
+		4FF2452E263FDB2F00BF4BC5 /* CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2452D263FDB2F00BF4BC5 /* CellDelegate.swift */; };
+		4FF2453C2640048B00BF4BC5 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF245382640048B00BF4BC5 /* LogInVC.swift */; };
+		4FF2453D2640048B00BF4BC5 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF245392640048B00BF4BC5 /* BaseVC.swift */; };
+		4FF2453E2640048B00BF4BC5 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2453A2640048B00BF4BC5 /* SignUp.swift */; };
+		4FF2453F2640048B00BF4BC5 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2453B2640048B00BF4BC5 /* ThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,15 +68,14 @@
 		4F9B4B9226188E74007E8534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F9B4B9526188E74007E8534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F9B4B9726188E74007E8534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F9B4B9E26188F3B007E8534 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
-		4F9B4BA126188F46007E8534 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
-		4F9B4BA426188F51007E8534 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
-		4F9B4BA82618928B007E8534 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		4FF244BF263BF6B200BF4BC5 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
 		4FF244C2263BFA7300BF4BC5 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		4FF244C3263BFA7300BF4BC5 /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
-		4FF244DB263C0E7D00BF4BC5 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
-		4FF244DC263C0E7D00BF4BC5 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		4FF2452D263FDB2F00BF4BC5 /* CellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDelegate.swift; sourceTree = "<group>"; };
+		4FF245382640048B00BF4BC5 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		4FF245392640048B00BF4BC5 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		4FF2453A2640048B00BF4BC5 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		4FF2453B2640048B00BF4BC5 /* ThirdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */,
-				4FF244DB263C0E7D00BF4BC5 /* MyTableViewCell.swift */,
-				4FF244DC263C0E7D00BF4BC5 /* MyTableViewCell.xib */,
 				4FF244C2263BFA7300BF4BC5 /* FriendsTableViewCell.swift */,
 				4FF244C3263BFA7300BF4BC5 /* FriendsTableViewCell.xib */,
 				4F08406B262EE8AF00247BAE /* Profile */,
@@ -153,22 +149,10 @@
 		4F539E0726274D4A0020ED9E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4FF245372640046300BF4BC5 /* Sign */,
 				4F08407A262EF9FC00247BAE /* Tabbar */,
-				4F539E2026283E9F0020ED9E /* Sign */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4F539E2026283E9F0020ED9E /* Sign */ = {
-			isa = PBXGroup;
-			children = (
-				4F9B4BA82618928B007E8534 /* BaseVC.swift */,
-				4F9B4B9E26188F3B007E8534 /* LogInVC.swift */,
-				4F9B4BA126188F46007E8534 /* SignUp.swift */,
-				4F9B4BA426188F51007E8534 /* ThirdVC.swift */,
-			);
-			name = Sign;
-			path = "회원가입,로그인";
 			sourceTree = "<group>";
 		};
 		4F539E37262847030020ED9E /* Extension */ = {
@@ -203,6 +187,7 @@
 		4F9B4B8826188E70007E8534 /* SOPT_28th_1 */ = {
 			isa = PBXGroup;
 			children = (
+				4FF2452C263FDB0C00BF4BC5 /* Protocol */,
 				4F08406D262EEAF800247BAE /* Model */,
 				4F539E37262847030020ED9E /* Extension */,
 				4F539E0726274D4A0020ED9E /* Controller */,
@@ -213,6 +198,25 @@
 				4F9B4B9726188E74007E8534 /* Info.plist */,
 			);
 			path = SOPT_28th_1;
+			sourceTree = "<group>";
+		};
+		4FF2452C263FDB0C00BF4BC5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4FF2452D263FDB2F00BF4BC5 /* CellDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4FF245372640046300BF4BC5 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				4FF245392640048B00BF4BC5 /* BaseVC.swift */,
+				4FF245382640048B00BF4BC5 /* LogInVC.swift */,
+				4FF2453A2640048B00BF4BC5 /* SignUp.swift */,
+				4FF2453B2640048B00BF4BC5 /* ThirdVC.swift */,
+			);
+			path = Sign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +282,6 @@
 				4F539E2826283EF90020ED9E /* TabbarSegue3.storyboard in Resources */,
 				4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */,
 				4F9B4B9626188E74007E8534 /* LaunchScreen.storyboard in Resources */,
-				4FF244DE263C0E7D00BF4BC5 /* MyTableViewCell.xib in Resources */,
 				4F9B4B9326188E74007E8534 /* Assets.xcassets in Resources */,
 				4F9B4B9126188E70007E8534 /* Main.storyboard in Resources */,
 				4F539E2B26283F040020ED9E /* TabbarSegue4.storyboard in Resources */,
@@ -293,17 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF2452E263FDB2F00BF4BC5 /* CellDelegate.swift in Sources */,
 				4F539E4626284CBC0020ED9E /* ProfileVC.swift in Sources */,
-				4F9B4BA526188F51007E8534 /* ThirdVC.swift in Sources */,
 				4F17D6E2262C4EF2005B2913 /* StoryVC.swift in Sources */,
-				4FF244DD263C0E7D00BF4BC5 /* MyTableViewCell.swift in Sources */,
+				4FF2453C2640048B00BF4BC5 /* LogInVC.swift in Sources */,
 				4FF244C4263BFA7300BF4BC5 /* FriendsTableViewCell.swift in Sources */,
-				4F9B4BA92618928B007E8534 /* BaseVC.swift in Sources */,
 				4F539E31262843560020ED9E /* TabbarVC.swift in Sources */,
+				4FF2453F2640048B00BF4BC5 /* ThirdVC.swift in Sources */,
 				4F539E392628471C0020ED9E /* UITextField.swift in Sources */,
-				4F9B4BA226188F46007E8534 /* SignUp.swift in Sources */,
+				4FF2453E2640048B00BF4BC5 /* SignUp.swift in Sources */,
 				4FF244C0263BF6B200BF4BC5 /* FriendDataModel.swift in Sources */,
-				4F9B4B9F26188F3B007E8534 /* LogInVC.swift in Sources */,
 				4F084077262EF37500247BAE /* TapGesture.swift in Sources */,
 				4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */,
 				4F539E43262848C00020ED9E /* UIFont.swift in Sources */,
@@ -315,6 +317,7 @@
 				4F9B4B8C26188E70007E8534 /* SceneDelegate.swift in Sources */,
 				4F084074262EF00500247BAE /* UIView.swift in Sources */,
 				4F539E3D262847280020ED9E /* UIButton.swift in Sources */,
+				4FF2453D2640048B00BF4BC5 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
