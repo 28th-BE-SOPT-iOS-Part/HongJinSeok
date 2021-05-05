@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		4F084074262EF00500247BAE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084073262EF00500247BAE /* UIView.swift */; };
 		4F084077262EF37500247BAE /* TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084076262EF37500247BAE /* TapGesture.swift */; };
+		4F178E2626428DBA0077177B /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F178E1D26428DBA0077177B /* FriendsTableViewCell.xib */; };
+		4F178E2726428DBA0077177B /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E1E26428DBA0077177B /* MyProfileTableViewCell.swift */; };
+		4F178E2826428DBA0077177B /* StoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E2026428DBA0077177B /* StoryVC.swift */; };
+		4F178E2926428DBA0077177B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E2126428DBA0077177B /* ProfileVC.swift */; };
+		4F178E2A26428DBA0077177B /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E2226428DBA0077177B /* EditVC.swift */; };
+		4F178E2B26428DBA0077177B /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E2326428DBA0077177B /* ChatVC.swift */; };
+		4F178E2C26428DBA0077177B /* TabbarSegue1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E2426428DBA0077177B /* TabbarSegue1VC.swift */; };
+		4F178E2D26428DBA0077177B /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F178E2526428DBA0077177B /* FriendsTableViewCell.swift */; };
 		4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6EA262DB1B8005B2913 /* UIViewController.swift */; };
 		4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E0326274C570020ED9E /* Tabbar.storyboard */; };
 		4F539E2226283ECC0020ED9E /* TabbarSegue1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */; };
@@ -40,6 +48,14 @@
 /* Begin PBXFileReference section */
 		4F084073262EF00500247BAE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4F084076262EF37500247BAE /* TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGesture.swift; sourceTree = "<group>"; };
+		4F178E1D26428DBA0077177B /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
+		4F178E1E26428DBA0077177B /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		4F178E2026428DBA0077177B /* StoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryVC.swift; sourceTree = "<group>"; };
+		4F178E2126428DBA0077177B /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4F178E2226428DBA0077177B /* EditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		4F178E2326428DBA0077177B /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		4F178E2426428DBA0077177B /* TabbarSegue1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarSegue1VC.swift; sourceTree = "<group>"; };
+		4F178E2526428DBA0077177B /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		4F17D6EA262DB1B8005B2913 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4F539E0326274C570020ED9E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSegue1.storyboard; sourceTree = "<group>"; };
@@ -84,9 +100,13 @@
 		4F06AC07262C34AF00324C92 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
+				4F178E2526428DBA0077177B /* FriendsTableViewCell.swift */,
+				4F178E1D26428DBA0077177B /* FriendsTableViewCell.xib */,
+				4F178E1E26428DBA0077177B /* MyProfileTableViewCell.swift */,
+				4F178E1F26428DBA0077177B /* Profile */,
+				4F178E2426428DBA0077177B /* TabbarSegue1VC.swift */,
 			);
-			name = Friend;
-			path = "친구";
+			path = Friend;
 			sourceTree = "<group>";
 		};
 		4F08406D262EEAF800247BAE /* Model */ = {
@@ -106,6 +126,17 @@
 				4F90E3A32641CA340070D7D1 /* More */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4F178E1F26428DBA0077177B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4F178E2026428DBA0077177B /* StoryVC.swift */,
+				4F178E2126428DBA0077177B /* ProfileVC.swift */,
+				4F178E2226428DBA0077177B /* EditVC.swift */,
+				4F178E2326428DBA0077177B /* ChatVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		4F539E0126274B640020ED9E /* View */ = {
@@ -267,6 +298,7 @@
 				4F539E2526283EEF0020ED9E /* TabbarSegue2.storyboard in Resources */,
 				4F539E2826283EF90020ED9E /* TabbarSegue3.storyboard in Resources */,
 				4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */,
+				4F178E2626428DBA0077177B /* FriendsTableViewCell.xib in Resources */,
 				4F9B4B9626188E74007E8534 /* LaunchScreen.storyboard in Resources */,
 				4F9B4B9326188E74007E8534 /* Assets.xcassets in Resources */,
 				4F9B4B9126188E70007E8534 /* Main.storyboard in Resources */,
@@ -283,16 +315,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F178E2A26428DBA0077177B /* EditVC.swift in Sources */,
 				4FF2452E263FDB2F00BF4BC5 /* CellDelegate.swift in Sources */,
 				4FF2453C2640048B00BF4BC5 /* LogInVC.swift in Sources */,
 				4F539E31262843560020ED9E /* TabbarVC.swift in Sources */,
 				4FF2453F2640048B00BF4BC5 /* ThirdVC.swift in Sources */,
 				4F90E3A52641CA570070D7D1 /* MoreVC.swift in Sources */,
+				4F178E2726428DBA0077177B /* MyProfileTableViewCell.swift in Sources */,
 				4F539E392628471C0020ED9E /* UITextField.swift in Sources */,
 				4FF2453E2640048B00BF4BC5 /* SignUp.swift in Sources */,
 				4FF244C0263BF6B200BF4BC5 /* FriendDataModel.swift in Sources */,
+				4F178E2926428DBA0077177B /* ProfileVC.swift in Sources */,
+				4F178E2B26428DBA0077177B /* ChatVC.swift in Sources */,
 				4F084077262EF37500247BAE /* TapGesture.swift in Sources */,
 				4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */,
+				4F178E2C26428DBA0077177B /* TabbarSegue1VC.swift in Sources */,
 				4F539E43262848C00020ED9E /* UIFont.swift in Sources */,
 				4F90E3AF26427D020070D7D1 /* MoreCollectionViewCell.swift in Sources */,
 				4F539E4926284E730020ED9E /* UIColor.swift in Sources */,
@@ -300,6 +337,8 @@
 				4F9B4B8C26188E70007E8534 /* SceneDelegate.swift in Sources */,
 				4F084074262EF00500247BAE /* UIView.swift in Sources */,
 				4F539E3D262847280020ED9E /* UIButton.swift in Sources */,
+				4F178E2826428DBA0077177B /* StoryVC.swift in Sources */,
+				4F178E2D26428DBA0077177B /* FriendsTableViewCell.swift in Sources */,
 				4FF2453D2640048B00BF4BC5 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
