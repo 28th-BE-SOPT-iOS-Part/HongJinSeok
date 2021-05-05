@@ -26,6 +26,9 @@
 		4F539E43262848C00020ED9E /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E42262848C00020ED9E /* UIFont.swift */; };
 		4F539E4626284CBC0020ED9E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E4526284CBC0020ED9E /* ProfileVC.swift */; };
 		4F539E4926284E730020ED9E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E4826284E730020ED9E /* UIColor.swift */; };
+		4F90E3A52641CA570070D7D1 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90E3A42641CA570070D7D1 /* MoreVC.swift */; };
+		4F90E3AF26427D020070D7D1 /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90E3AD26427D020070D7D1 /* MoreCollectionViewCell.swift */; };
+		4F90E3B026427D020070D7D1 /* MoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F90E3AE26427D020070D7D1 /* MoreCollectionViewCell.xib */; };
 		4F9B4B8A26188E70007E8534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4B8926188E70007E8534 /* AppDelegate.swift */; };
 		4F9B4B8C26188E70007E8534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B4B8B26188E70007E8534 /* SceneDelegate.swift */; };
 		4F9B4B9126188E70007E8534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B4B8F26188E70007E8534 /* Main.storyboard */; };
@@ -61,6 +64,9 @@
 		4F539E42262848C00020ED9E /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		4F539E4526284CBC0020ED9E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4F539E4826284E730020ED9E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4F90E3A42641CA570070D7D1 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		4F90E3AD26427D020070D7D1 /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F90E3AE26427D020070D7D1 /* MoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreCollectionViewCell.xib; sourceTree = "<group>"; };
 		4F9B4B8626188E70007E8534 /* SOPT_28th_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_28th_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B4B8926188E70007E8534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9B4B8B26188E70007E8534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 			children = (
 				4F539E30262843560020ED9E /* TabbarVC.swift */,
 				4F06AC07262C34AF00324C92 /* Friend */,
+				4F90E3A32641CA340070D7D1 /* More */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -166,6 +173,16 @@
 				4F084073262EF00500247BAE /* UIView.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4F90E3A32641CA340070D7D1 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				4F90E3A42641CA570070D7D1 /* MoreVC.swift */,
+				4F90E3AD26427D020070D7D1 /* MoreCollectionViewCell.swift */,
+				4F90E3AE26427D020070D7D1 /* MoreCollectionViewCell.xib */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 		4F9B4B7D26188E70007E8534 = {
@@ -286,6 +303,7 @@
 				4F9B4B9126188E70007E8534 /* Main.storyboard in Resources */,
 				4F539E2B26283F040020ED9E /* TabbarSegue4.storyboard in Resources */,
 				4F539E2E26283F0E0020ED9E /* TabbarSegue5.storyboard in Resources */,
+				4F90E3B026427D020070D7D1 /* MoreCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +321,7 @@
 				4FF244C4263BFA7300BF4BC5 /* FriendsTableViewCell.swift in Sources */,
 				4F539E31262843560020ED9E /* TabbarVC.swift in Sources */,
 				4FF2453F2640048B00BF4BC5 /* ThirdVC.swift in Sources */,
+				4F90E3A52641CA570070D7D1 /* MoreVC.swift in Sources */,
 				4F539E392628471C0020ED9E /* UITextField.swift in Sources */,
 				4FF2453E2640048B00BF4BC5 /* SignUp.swift in Sources */,
 				4FF244C0263BF6B200BF4BC5 /* FriendDataModel.swift in Sources */,
@@ -312,6 +331,7 @@
 				4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */,
 				4F539E402628484D0020ED9E /* TabbarSegue1VC.swift in Sources */,
 				4F17D6DF262C4EE7005B2913 /* EditVC.swift in Sources */,
+				4F90E3AF26427D020070D7D1 /* MoreCollectionViewCell.swift in Sources */,
 				4F539E4926284E730020ED9E /* UIColor.swift in Sources */,
 				4F9B4B8A26188E70007E8534 /* AppDelegate.swift in Sources */,
 				4F9B4B8C26188E70007E8534 /* SceneDelegate.swift in Sources */,

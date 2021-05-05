@@ -55,6 +55,7 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtab_profileImg" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-Kw-drz">
                                             <rect key="frame" x="14" y="5" width="59" height="58"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="59" id="VD6-AY-DdP"/>
                                                 <constraint firstAttribute="height" constant="58" id="cmt-C3-cQJ"/>
                                             </constraints>
                                         </imageView>
@@ -65,7 +66,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상태메세지는 여기에" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5J-Ei-Zp8">
-                                            <rect key="frame" x="84" y="38" width="89" height="14"/>
+                                            <rect key="frame" x="84" y="36" width="89" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -85,7 +86,7 @@
                                         <constraint firstItem="SBb-Kw-drz" firstAttribute="leading" secondItem="2iN-nn-5av" secondAttribute="leading" constant="14" id="GJX-Gx-OgR"/>
                                         <constraint firstItem="SBb-Kw-drz" firstAttribute="top" secondItem="2iN-nn-5av" secondAttribute="top" constant="5" id="IhN-bi-GIP"/>
                                         <constraint firstItem="p5J-Ei-Zp8" firstAttribute="leading" secondItem="SBb-Kw-drz" secondAttribute="trailing" constant="11" id="Lc5-If-XFS"/>
-                                        <constraint firstItem="p5J-Ei-Zp8" firstAttribute="top" secondItem="OxR-bP-mwI" secondAttribute="bottom" constant="9" id="USy-Ci-ss8"/>
+                                        <constraint firstItem="p5J-Ei-Zp8" firstAttribute="top" secondItem="OxR-bP-mwI" secondAttribute="bottom" constant="7" id="Q1p-AS-2nI"/>
                                         <constraint firstItem="ijF-9h-Gv5" firstAttribute="top" secondItem="SBb-Kw-drz" secondAttribute="bottom" constant="8.5" id="n1P-35-tmY"/>
                                         <constraint firstItem="OxR-bP-mwI" firstAttribute="leading" secondItem="SBb-Kw-drz" secondAttribute="trailing" constant="10" id="qoK-ko-omj"/>
                                         <constraint firstAttribute="trailing" secondItem="ijF-9h-Gv5" secondAttribute="trailing" constant="16" id="qsu-jh-CcI"/>

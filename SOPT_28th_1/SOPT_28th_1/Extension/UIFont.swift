@@ -18,9 +18,13 @@ extension UIFont {
      }
         
     class var FriendState: UIFont {
-        return UIFont(name: "AppleSDGothicNeo-Regular", size: 11.0)!// 친구 상태메세지 폰트
+        return UIFont(name: "AppleSDGothicNeo-Regular", size: 11.0)!// 친구 상태메세지 폰트,
       }
-            
+    
+    class var MoreMenu: UIFont {
+        return UIFont(name: "AppleSDGothicNeo-Regular", size: 11.0)!// 더 보기 글씨 폰트
+      }
+    
     class var profileName: UIFont {
        return UIFont(name: "AppleSDGothicNeo-Regular", size: 18.0)! //프로필 내 이름 폰트
      }
@@ -31,6 +35,14 @@ extension UIFont {
     
     class var MyName : UIFont {
         return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 16.0)! //내 이름 폰트
+      }
+    
+    class var moreMyName: UIFont {
+        return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 15.0)!
+      }//더보기 내 이름 폰트
+    
+    class var moreMyID: UIFont {
+        return UIFont(name: "AppleSDGothicNeo-Regular", size: 12.0)!
       }
 }
 
