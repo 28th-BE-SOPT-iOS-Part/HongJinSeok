@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F084074262EF00500247BAE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084073262EF00500247BAE /* UIView.swift */; };
 		4F084077262EF37500247BAE /* TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F084076262EF37500247BAE /* TapGesture.swift */; };
-		4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6DA262C4EDC005B2913 /* ChatVC.swift */; };
-		4F17D6DF262C4EE7005B2913 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6DE262C4EE7005B2913 /* EditVC.swift */; };
-		4F17D6E2262C4EF2005B2913 /* StoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6E1262C4EF2005B2913 /* StoryVC.swift */; };
 		4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17D6EA262DB1B8005B2913 /* UIViewController.swift */; };
 		4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E0326274C570020ED9E /* Tabbar.storyboard */; };
 		4F539E2226283ECC0020ED9E /* TabbarSegue1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */; };
@@ -22,9 +19,7 @@
 		4F539E31262843560020ED9E /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E30262843560020ED9E /* TabbarVC.swift */; };
 		4F539E392628471C0020ED9E /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E382628471C0020ED9E /* UITextField.swift */; };
 		4F539E3D262847280020ED9E /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E3C262847280020ED9E /* UIButton.swift */; };
-		4F539E402628484D0020ED9E /* TabbarSegue1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */; };
 		4F539E43262848C00020ED9E /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E42262848C00020ED9E /* UIFont.swift */; };
-		4F539E4626284CBC0020ED9E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E4526284CBC0020ED9E /* ProfileVC.swift */; };
 		4F539E4926284E730020ED9E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F539E4826284E730020ED9E /* UIColor.swift */; };
 		4F90E3A52641CA570070D7D1 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90E3A42641CA570070D7D1 /* MoreVC.swift */; };
 		4F90E3AF26427D020070D7D1 /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90E3AD26427D020070D7D1 /* MoreCollectionViewCell.swift */; };
@@ -35,8 +30,6 @@
 		4F9B4B9326188E74007E8534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B4B9226188E74007E8534 /* Assets.xcassets */; };
 		4F9B4B9626188E74007E8534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B4B9426188E74007E8534 /* LaunchScreen.storyboard */; };
 		4FF244C0263BF6B200BF4BC5 /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF244BF263BF6B200BF4BC5 /* FriendDataModel.swift */; };
-		4FF244C4263BFA7300BF4BC5 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF244C2263BFA7300BF4BC5 /* FriendsTableViewCell.swift */; };
-		4FF244C5263BFA7300BF4BC5 /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF244C3263BFA7300BF4BC5 /* FriendsTableViewCell.xib */; };
 		4FF2452E263FDB2F00BF4BC5 /* CellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2452D263FDB2F00BF4BC5 /* CellDelegate.swift */; };
 		4FF2453C2640048B00BF4BC5 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF245382640048B00BF4BC5 /* LogInVC.swift */; };
 		4FF2453D2640048B00BF4BC5 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF245392640048B00BF4BC5 /* BaseVC.swift */; };
@@ -47,9 +40,6 @@
 /* Begin PBXFileReference section */
 		4F084073262EF00500247BAE /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4F084076262EF37500247BAE /* TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGesture.swift; sourceTree = "<group>"; };
-		4F17D6DA262C4EDC005B2913 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
-		4F17D6DE262C4EE7005B2913 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
-		4F17D6E1262C4EF2005B2913 /* StoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVC.swift; sourceTree = "<group>"; };
 		4F17D6EA262DB1B8005B2913 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4F539E0326274C570020ED9E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		4F539E2126283ECC0020ED9E /* TabbarSegue1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabbarSegue1.storyboard; sourceTree = "<group>"; };
@@ -60,9 +50,7 @@
 		4F539E30262843560020ED9E /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		4F539E382628471C0020ED9E /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		4F539E3C262847280020ED9E /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarSegue1VC.swift; sourceTree = "<group>"; };
 		4F539E42262848C00020ED9E /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		4F539E4526284CBC0020ED9E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		4F539E4826284E730020ED9E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4F90E3A42641CA570070D7D1 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		4F90E3AD26427D020070D7D1 /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -75,8 +63,6 @@
 		4F9B4B9526188E74007E8534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F9B4B9726188E74007E8534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FF244BF263BF6B200BF4BC5 /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
-		4FF244C2263BFA7300BF4BC5 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
-		4FF244C3263BFA7300BF4BC5 /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
 		4FF2452D263FDB2F00BF4BC5 /* CellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDelegate.swift; sourceTree = "<group>"; };
 		4FF245382640048B00BF4BC5 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		4FF245392640048B00BF4BC5 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -98,25 +84,9 @@
 		4F06AC07262C34AF00324C92 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
-				4F539E3F2628484D0020ED9E /* TabbarSegue1VC.swift */,
-				4FF244C2263BFA7300BF4BC5 /* FriendsTableViewCell.swift */,
-				4FF244C3263BFA7300BF4BC5 /* FriendsTableViewCell.xib */,
-				4F08406B262EE8AF00247BAE /* Profile */,
 			);
 			name = Friend;
 			path = "친구";
-			sourceTree = "<group>";
-		};
-		4F08406B262EE8AF00247BAE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				4F539E4526284CBC0020ED9E /* ProfileVC.swift */,
-				4F17D6E1262C4EF2005B2913 /* StoryVC.swift */,
-				4F17D6DE262C4EE7005B2913 /* EditVC.swift */,
-				4F17D6DA262C4EDC005B2913 /* ChatVC.swift */,
-			);
-			name = Profile;
-			path = "상세프로필";
 			sourceTree = "<group>";
 		};
 		4F08406D262EEAF800247BAE /* Model */ = {
@@ -294,7 +264,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F539E2226283ECC0020ED9E /* TabbarSegue1.storyboard in Resources */,
-				4FF244C5263BFA7300BF4BC5 /* FriendsTableViewCell.xib in Resources */,
 				4F539E2526283EEF0020ED9E /* TabbarSegue2.storyboard in Resources */,
 				4F539E2826283EF90020ED9E /* TabbarSegue3.storyboard in Resources */,
 				4F539E0426274C570020ED9E /* Tabbar.storyboard in Resources */,
@@ -315,10 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF2452E263FDB2F00BF4BC5 /* CellDelegate.swift in Sources */,
-				4F539E4626284CBC0020ED9E /* ProfileVC.swift in Sources */,
-				4F17D6E2262C4EF2005B2913 /* StoryVC.swift in Sources */,
 				4FF2453C2640048B00BF4BC5 /* LogInVC.swift in Sources */,
-				4FF244C4263BFA7300BF4BC5 /* FriendsTableViewCell.swift in Sources */,
 				4F539E31262843560020ED9E /* TabbarVC.swift in Sources */,
 				4FF2453F2640048B00BF4BC5 /* ThirdVC.swift in Sources */,
 				4F90E3A52641CA570070D7D1 /* MoreVC.swift in Sources */,
@@ -328,9 +294,6 @@
 				4F084077262EF37500247BAE /* TapGesture.swift in Sources */,
 				4F17D6EB262DB1B8005B2913 /* UIViewController.swift in Sources */,
 				4F539E43262848C00020ED9E /* UIFont.swift in Sources */,
-				4F17D6DB262C4EDC005B2913 /* ChatVC.swift in Sources */,
-				4F539E402628484D0020ED9E /* TabbarSegue1VC.swift in Sources */,
-				4F17D6DF262C4EE7005B2913 /* EditVC.swift in Sources */,
 				4F90E3AF26427D020070D7D1 /* MoreCollectionViewCell.swift in Sources */,
 				4F539E4926284E730020ED9E /* UIColor.swift in Sources */,
 				4F9B4B8A26188E70007E8534 /* AppDelegate.swift in Sources */,
