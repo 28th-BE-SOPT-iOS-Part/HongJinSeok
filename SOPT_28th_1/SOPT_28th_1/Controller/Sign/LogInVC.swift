@@ -31,6 +31,7 @@ class LogInVC: BaseVC {
         
         email_TextField.delegate = self
         pwd_textField.delegate = self
+        AlertController.shared.delegate = self
     }
     
     override func viewDidLayoutSubviews(){
@@ -65,13 +66,40 @@ class LogInVC: BaseVC {
     // MARK: - IBAction
      @IBAction func loginBtnClicked(_ sender: Any) {
         if buttonCheck(textfields!){
-
-            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
-            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
-
+            guard let email = email_TextField.text,
+                  let pwd = pwd_textField.text else{return}
             
-            nextVC.modalPresentationStyle = .overFullScreen
-            self.present(nextVC, animated: true, completion: nil)
+            LoginService.shared.login(email, pwd) { data in
+
+                switch data{
+                case .success(let data) :
+                    guard let data = data as? LoginResponse else { return }
+                    if let user = data.data{
+                        print(user.token)
+                    }
+                    AlertController.shared.makeAlert(data.message,self)
+                    
+                    
+//                  UserDefaults.standard.setValue(tokenData.jwt, forKey: UserKey.TOKEN)
+//                  UserDefaults.standard.setValue(tokenData.nickname, forKey: UserKey.NICKNAME)
+//                  UserDefaults.standard.setValue(self.idTextField.text, forKey: UserKey.ID)
+                
+                case .requestErr(let message):
+                    if let msg = message as? String{
+                        AlertController.shared.makeAlert(msg,self)
+                    }
+                    return
+                case .pathErr :
+                    print("patherr")
+                    return
+                case .serverErr:
+                    print("serverErr")
+                    return
+                case .networkFail:
+                    print("networkFail")
+                    return
+                }
+            }
         }
      }
     
@@ -80,4 +108,21 @@ class LogInVC: BaseVC {
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
+}
+
+extension LogInVC : AlertDelegate{
+    func getOK(_ alertController: AlertController) {
+        
+        guard let msg = alertController.message else{return}
+        
+        if msg[msg.startIndex] == "로"{//로그인 성공
+            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
+            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
+            self.navigationController?.pushViewController(nextVC, animated: true)
+        }
+        else{//실패
+            
+        }
+        
+    }
 }
