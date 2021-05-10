@@ -75,15 +75,10 @@ class LogInVC: BaseVC {
                 case .success(let data) :
                     guard let data = data as? LoginResponse else { return }
                     if let user = data.data{
-                        print(user.token)
+                        UserDefaults.standard.setValue(user.token, forKey: UserKey.TOKEN)
                     }
                     AlertController.shared.makeAlert(data.message,self)
                     
-                    
-//                  UserDefaults.standard.setValue(tokenData.jwt, forKey: UserKey.TOKEN)
-//                  UserDefaults.standard.setValue(tokenData.nickname, forKey: UserKey.NICKNAME)
-//                  UserDefaults.standard.setValue(self.idTextField.text, forKey: UserKey.ID)
-                
                 case .requestErr(let message):
                     if let msg = message as? String{
                         AlertController.shared.makeAlert(msg,self)
@@ -115,7 +110,7 @@ extension LogInVC : AlertDelegate{
         
         guard let msg = alertController.message else{return}
         
-        if msg[msg.startIndex] == "로"{//로그인 성공
+        if msg.contains("성공"){//로그인 성공
             let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
             guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
             self.navigationController?.pushViewController(nextVC, animated: true)

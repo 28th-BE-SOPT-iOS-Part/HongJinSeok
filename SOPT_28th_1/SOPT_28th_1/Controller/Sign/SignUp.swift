@@ -8,7 +8,7 @@
 import UIKit
 
 class SignUpVC: BaseVC {
-
+    
     //업데이트
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var completeBtn: UIButton!
@@ -22,7 +22,7 @@ class SignUpVC: BaseVC {
     // MARK: - ViewCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         UISetting()
         
         textfields = [email_TextField,pwd_TextField,repwd_TextField]
@@ -30,6 +30,7 @@ class SignUpVC: BaseVC {
         email_TextField.delegate = self
         pwd_TextField.delegate = self
         repwd_TextField.delegate = self
+        AlertController.shared.delegate = self
     }
     
     override func viewDidLayoutSubviews(){
@@ -58,16 +59,68 @@ class SignUpVC: BaseVC {
     
     // MARK: - IBAction
     @IBAction func completBtnClicked(_ sender: Any) {
-        if buttonCheck(textfields!){
-            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
-            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
+        guard let email = email_TextField.text,
+              let pwd = pwd_TextField.text else{return}
+        var newUser = User(email: email, pwd: pwd)
+        if pwd != repwd_TextField.text{
+            newUser.email = nil
+        }
+        
+        
+        LoginService.shared.signup(newUser) { data in
             
-    
-            nextVC.modalPresentationStyle = .fullScreen
+            switch data{
+            case .success(let data) :
+                guard let data = data as? SignupResponse else { return }
+                
+                AlertController.shared.makeAlert(data.message,self)
+                
+            case .requestErr(let message):
+                if let msg = message as? String{
+                    AlertController.shared.makeAlert(msg,self)
+                }
+                return
+            case .pathErr :
+                print("patherr")
+                return
+            case .serverErr:
+                print("serverErr")
+                return
+            case .networkFail:
+                print("networkFail")
+                return
+            }
             
-            self.present(nextVC, animated: true, completion: nil)
-            
-            back()
+            //            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
+            //            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
+            //
+            //
+            //            nextVC.modalPresentationStyle = .fullScreen
+            //
+            //            self.present(nextVC, animated: true, completion: nil)
+            //
+            //back()
         }
     }
+}
+extension SignUpVC : AlertDelegate{
+    func getOK(_ alertController: AlertController) {
+        
+        guard let msg = alertController.message else{return}
+        
+        if msg.contains("성공"){//로그인 성공
+            let storyboard = UIStoryboard.init(name: "Tabbar", bundle : nil)
+            guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarVC") as? TabbarVC else{return}
+            nextVC.modalPresentationStyle = .fullScreen
+            self.present(nextVC, animated: true, completion: nil)
+            self.back()
+        }
+        else{//실패
+            
+        }
+        
+        
+    }
+    
+    
 }
